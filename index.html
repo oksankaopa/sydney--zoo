@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animals of Australia</title>
+  </head>
+  <body>
+    <h1>Australian animals</h1>
+    <h2>The animals of Australia are a special pride of the fifth continent</h2>
+    <hr />
+    <h3>KOALA</h3>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/399/original/koala.jpg?1653638982"
+      alt="Koala"
+      width="500"
+    />
+    <p>
+      The koala or, inaccurately, koala bear (Phascolarctos cinereus) is an
+      arboreal herbivorous marsupial native to Australia. It is the only extant
+      representative of the family Phascolarctidae and its closest living
+      relatives are the wombats. The koala is found in coastal areas of the
+      mainland's eastern and southern regions, inhabiting Queensland, New South
+      Wales, Victoria, and South Australia. It is easily recognizable by its
+      stout, tailless body and large head with round, fluffy ears and large,
+      spoon-shaped nose. The koala has a body length of 60–85 cm (24–33 in) and
+      weighs 4–15 kg (9–33 lb). Fur color ranges from silver gray to chocolate
+      brown.
+      <br />
+      <a
+        class="learnMore"
+        href="https://en.wikipedia.org/wiki/Koala"
+        target="_blank"
+      >
+        🐨Read more about Koala
+      </a>
+    </p>
+
+    <hr />
+    <h3>PLATYPUS</h3>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/400/original/platypus.jpg?1653639697"
+      alt="Platypus"
+      width="550"
+    />
+    <p>
+      One of the most fascinating and unusual Australian animals, the
+      duck-billed platypus, along with the echidna, are the only known
+      monotremes, or egg-laying mammals, in existence. The platypus is generally
+      found in permanent river systems and lakes in southern and eastern NSW and
+      east and west of the Great Dividing Range.
+      <br />
+      <a
+        class="learnMore"
+        href="https://en.wikipedia.org/wiki/Platypus"
+        target="_blank"
+      >
+        🧸Read more about Platypus
+      </a>
+    </p>
+
+    <hr />
+
+    <h3>KANGAROO</h3>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/414/original/kangaroo.jpg?1653652127"
+      alt="kangaroo"
+      width="520"
+    />
+
+    <p>
+      The kangaroo is a marsupial from the family Macropodidae (macropods,
+      meaning "large foot"). In common use the term is used to describe the
+      largest species from this family, the red kangaroo, as well as the
+      antilopine kangaroo, eastern grey kangaroo, and western grey
+      kangaroo.Kangaroos are indigenous to Australia and New Guinea. The
+      kangaroo is a symbol of Australia, appears on the Australian coat of arms
+      and on some of its currency, and is used as a logo for some of Australia's
+      most well-known organisations. The kangaroo is important to both
+      Australian culture and the national image.
+      <br />
+      <a
+        class="learnMore"
+        href="https://en.wikipedia.org/wiki/Kangaroo"
+        target="_blank"
+      >
+        🦘Read more about Kangaroo
+      </a>
+    </p>
+    <button class="visitButton">Visit Sydney Zoo</button>
+    <p class="footer">
+      This page was built by
+      <a
+        href="https://www.linkedin.com/in/%D0%BE%D0%BA%D1%81%D0%B0%D0%BD%D0%B0-%D0%BE%D0%BF%D0%B0%D0%BD%D0%B0%D1%81%D0%B5%D0%BD%D0%BA%D0%BE-96711bbb/"
+        target="_blank"
+      >
+        Oksana Opanasenko
+      </a>
+    </p>
+    <script>
+      function visitNow() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email adress?");
+        let favorite = prompt(
+          "Who do you like more: koala, platypus or kangaroo?"
+        );
+        if (favorite === "koala") {
+          alert(
+            "Thank you, " + name + ", we'll keep in touch by email! Hugs 🐨"
+          );
+        }
+        if (favorite === "platypus") {
+          alert(
+            "Thank you, " + name + "! We'll keep in touch by email! Hugs 🧸"
+          );
+        }
+        if (favorite === "kangaroo") {
+          alert(
+            "Thank you, " + name + "! We'll keep in touch by email! Hugs 🦘"
+          );
+        }
+        if (
+          favorite !== "koala" &&
+          favorite !== "platypus" &&
+          favorite !== "kangaroo"
+        ) {
+          alert(
+            "Thank you, " + name + "! We'll keep in touch by email! Hugs 🤗"
+          );
+        }
+      }
+      let visitButton = document.querySelector(".visitButton");
+      visitButton.addEventListener("click", visitNow);
+    </script>
+    <div class="container"></div>
+  </body>
+</html>
